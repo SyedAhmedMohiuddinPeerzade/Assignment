@@ -17,7 +17,10 @@ class Users(Base):
     def __init__(self,uuid):
         self.user_id=uuid
 
-#engine = create_engine("sqlite:///:memory",echo=True)
+#engine = create_engine("sqlite:///:memory:",echo=True)
+'''above commented line is for using in memory DB for faster access,
+for persistent DB we can use the below line. We should comment any one of them as per requirement
+'''
 engine = create_engine("sqlite:///DEMO.db")
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
