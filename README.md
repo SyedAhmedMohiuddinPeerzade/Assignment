@@ -17,7 +17,7 @@ It is assumed that sqlite is configured, if not follow the below steps (in Windo
 It is assumed that sqlalchemy ORM is configured if not follow the below steps:
     -	Download “ez_setup.py” from “https://bootstrap.pypa.io/ez_setup.py”
     -	Run the script: “python ez_setup.py install”   
-    -	Download SQLAlchemy from “from https://pypi.python.org/packages/source/S/SQLAlchemy/SQLAlchemy-1.0.9.tar.gz”
+    -	Download SQLAlchemy from “https://pypi.python.org/packages/source/S/SQLAlchemy/SQLAlchemy-1.0.9.tar.gz”
     -	Extract it to some folder, say C:\Python27
     -	Install SQLAlchemy, say "C:\Python27\SQLAlchemy-1.0.9>python setup.py install"
     
@@ -27,6 +27,6 @@ If running from eclipse, then "DEMO.db" and "uuids.txt" gets created in the dire
 
 If "assignment_without_argument.py" script is run then no need to provide the "uuids.txt" as argument, because the script itself adds 100 uuid's to the database and 1000 uuid's will be written into the uuids.txt file.
 
-If "assignment_without_argument.py" script is run then its MANDATORY to provide the uuids text file and few of the uuid's has to be added MANUALLY into the database.
+If "assignment_with_argument.py" script is run then its MANDATORY to provide the uuids text file and few of the uuid's has to be added MANUALLY into the database.
 
   
