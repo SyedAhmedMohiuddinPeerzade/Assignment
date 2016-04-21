@@ -33,7 +33,7 @@ class Demo:
     def uuids_nomatch(self):
         session = Session()
         nomatch_uuids=[]
-        with open(sys.argv[1],"r") as fp:
+        with open(sys.argv[1],'r') as fp:
             for one_uuid in fp:
                 one_uuid=one_uuid.rstrip('\n')
                 if not list(session.query(select([func.count('*')],(Users.user_id==one_uuid)))[0])[0]:
